@@ -6,6 +6,7 @@ Predicting mortality in patients is a crucial step in long-term clinical healthc
 Past research has been done extensively in this field. In our research, we indentfied the SAPS II score which was used to measure the severity of disease for patients. The score was calculated with the below parameters: Age, Heart Rate, Systolic Blood Pressure, Temperature, Glasgow Coma Scale, Mechanical Ventilation or CPAP, PaO2, FiO2, Urine Output, Blood Urea Nitrogen, Sodium, Potassium, Bicarbonate, Bilirubin, White Blood Cell, Chronic diseases, Type of admission. We believe that the above parameters are highly relevent features to our goal. In addition, we wanted to explore other possible features that may be critical to determine a patient's mortality in a year. Thus, in this project, we created two data sets. One of the data sets consists of 17 raw features that mentioned above. 17 raw features were found in table CHARTEVENT, ADMISSION, LABEVENT,and OUTPUT. The other data set consists of 17 raw features, in addtion to all features that we found in INPUT, LABEVENT and CHARTEVENT with low missing rate. We wanted to use the first data set as our benchmark and compare the performance between two data sets.
 
 dataset1- benchmark
+
 dataset2- our selected features (much more than dataset1)
 
 We compared 5 models on 2 datasets: Logistic Regression, Decision Tree, XGBoost,KNN,CNN
