@@ -19,13 +19,20 @@ dataset2- our selected features (much more than dataset1)
 We compared 5 models on 2 datasets: Logistic Regression, Decision Tree, XGBoost,KNN,CNN
 
 ## Methods
-We perform propressing by imputer missing data and normalize data
-We split 2 datasets into features and lables for test(0.2) and train(0.8)
-We plot ROC curves for default models on datasets to roughly estimate the performance (result may change after parameter turing)
-We perform hyperparameter selection by grid search and cross validation
-We fit model and predict test result based on tured models
+- We perform propressing by imputer missing data and normalize data
+- We split 2 datasets into features and lables for test(0.2) and train(0.8)
+- We plot ROC curves for default models on datasets to roughly estimate the performance (result may change after parameter turing)
+- We perform hyperparameter selection by grid search and cross validation
+- We fit model and predict test result based on tured models
+
+
+## Result
+
 We compare model performance for two datasets and choose the best model-- XGBoost
+
 -XBGoost is much better than other models(it is suitable for sparse hign dimension data)
--KNN performs better on dataset1(with less features) than set2(150 features) -CNN achieves good performance but not outstanding(maybe not enough data or enough tuning) . On the other hand, we think our data is not a sequential signal so may not achieve best performance on 1D CNN. -Tured decision tree is much better than origin one(reduce bias) -Logistic regression is on average performance
-Look into testing result for XGBoost on dataset2 for feature importance
-We find the results on two datasets are not far away from each other. And we believe it is because the data is sparse, so even when adding more data, it cannot reduce variance largely. On the other hand, the 17 features in the dataset1 are more dense. So it can perform well even it has few features. Moreover, since the features in first dataset are commonly used in history, it means they are important features generally.
+-KNN performs better on dataset1(with less features) than set2(150 features)
+-CNN achieves good performance but not outstanding(maybe not enough data or enough tuning). On the other hand, we think our data is not a sequential signal so may not achieve the best performance on 1D CNN.
+-Tured decision tree is much better than the origin one(reduce bias) -Logistic regression is on the average performance.
+
+Look into testing results for XGBoost on dataset2 for feature importance, we find the results on two datasets are not far away from each other. We believe it is because the data is sparse, so even when adding more data, it cannot reduce variance largely. On the other hand, the 17 features in dataset1 are more dense. So it can perform well even if it has few features. Moreover, since the features in the first dataset are commonly used in history, it means they are important features generally.
